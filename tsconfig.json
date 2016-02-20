@@ -17,13 +17,13 @@
     "filesGlob": [
         "**/*.ts",
         "**/*.tsx",
-        "!node_modules/**",
-        "typings/threejs/three.d.ts"
+        "!node_modules/**"
     ],
     "compileOnSave": true,
     "buildOnSave": false,
     "files": [
         "index.ts",
+        "midi.ts",
         "typings/threejs/three.d.ts"
     ],
     "atom": {
