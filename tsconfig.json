@@ -1,32 +1,30 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "isolatedModules": false,
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "declaration": false,
-        "noImplicitAny": false,
-        "removeComments": true,
-        "noLib": false,
-        "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
-    },
-    "filesGlob": [
-        "**/*.ts",
-        "**/*.tsx",
-        "!node_modules/**",
-        "typings/threejs/three.d.ts"
-    ],
-    "compileOnSave": true,
-    "buildOnSave": false,
-    "files": [
-        "index.ts",
-        "typings/threejs/three.d.ts"
-    ],
-    "atom": {
-        "rewriteTsconfig": true
-    }
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": false,
+    "outDir": "js"
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "./test/**/*.ts",
+    "!./jspm_packages/**/*.ts",
+    "!./node_modules/**/*.ts",
+    "!./typings/**/*.ts",
+    "./typings/tsd.d.ts"
+  ],
+  "compileOnSave": true,
+  "buildOnSave": true,
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./index.ts"
+  ]
 }
