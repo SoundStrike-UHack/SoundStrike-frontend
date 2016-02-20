@@ -1,5 +1,5 @@
 import * as Midi from "./midi";
-
+import * as THREE from 'three';
 class App {
   constructor() {
     this.scene = new THREE.Scene();

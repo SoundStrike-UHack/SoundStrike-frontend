@@ -22,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/SoundStrike-UHack/SoundStrike-frontend/issues"
   },
-  "homepage": "https://github.com/SoundStrike-UHack/SoundStrike-frontend#readme"
+  "homepage": "https://github.com/SoundStrike-UHack/SoundStrike-frontend#readme",
+  "jspm": {
+    "dependencies": {
+      "three": "github:mrdoob/three.js@master",
+      "ts": "github:frankwallis/plugin-typescript@^2.4.5"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.29"
+  }
 }
