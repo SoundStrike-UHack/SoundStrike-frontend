@@ -1,0 +1,20 @@
+.ag-loading {
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+  path {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 22;
+      stroke-miterlimit: 10;
+      animation: ag-loading-ani 1.75s linear infinite;
+      stroke-dasharray: 200.1357879638672;
+      stroke-dashoffset: 200.1357879638672;
+  }
+}
+
+@keyframes ag-loading-ani {
+  from {} to {
+    stroke-dashoffset:-200.1357879638672;
+  }
+}
