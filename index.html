@@ -1,9 +1,42 @@
+<!doctype html>
 <html>
+
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r74/three.min.js"></script>
-  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <title>SoundStrike - A Sight Reading Trainer</title>
+  <!--Search Engines-->
+  <meta name="author" content="Alain Galvan, Ben Botwin, Alastair Paragas">
+  <meta name="description" content="A Sight Reading Music Theory App built with WebMidi and WebGL!">
+  <meta name="keywords" content="Sight Reading, Music Theory, Note, Pitch, Piano, Guitar, Violin, Sound">
+  <!--Twitter-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Alainxyz">
+  <meta name="twitter:title" content="SoundStrike - A Sight Reading Trainer">
+  <meta name="twitter:description" content="A Sight Reading Music Theory App built with WebMidi and WebGL!">
+  <meta name="twitter:image" content="http://soundstrke.org/assets/brand/cover.png">
+  <!--Facebook-->
+  <meta property="og:title" content="SoundStrike - A Sight Reading Trainer">
+  <meta property="og:url" content="http://soundstrke.org">
+  <meta property="og:site_name" content="SoundStrike - A Sight Reading Trainer">
+  <meta property="og:image" content="http://soundstrke.org/assets/brand/cover.png" itemprop="thumbnailUrl">
+  <!--Icons/Mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="/assets/brand/icon-57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/brand/icon-72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/brand/icon-114.png">
+  <link rel="shortcut icon" href="/assets/brand/icon.ico">
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
+
 <body>
-  <div class="canvas"></div>
+
+  <div class="gl-scene"></div>
+  <!--Load Scripts -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script> System.import('js/index.js').then(null, console.error.bind(console));
+</script>
 </body>
+
 </html>
