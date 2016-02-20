@@ -6,8 +6,6 @@ export class MidiListener {
 
     this.audioContext = new AudioContext();
     this.MAX_SIZE = Math.max(4, Math.floor(this.audioContext.sampleRate/5000))
-
-
   }
 
   autoCorrelate( buf, sampleRate ) {

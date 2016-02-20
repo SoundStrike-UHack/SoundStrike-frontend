@@ -17,7 +17,8 @@
     "!./jspm_packages/**/*.ts",
     "!./node_modules/**/*.ts",
     "!./typings/**/*.ts",
-    "./typings/tsd.d.ts"
+    "./typings/tsd.d.ts",
+    "./typings/threejs/three.d.ts"
   ],
   "compileOnSave": true,
   "buildOnSave": true,
@@ -25,6 +26,8 @@
     "rewriteTsconfig": true
   },
   "files": [
-    "./index.ts"
+    "./index.ts",
+    "./midi.ts",
+    "./typings/threejs/three.d.ts"
   ]
 }
