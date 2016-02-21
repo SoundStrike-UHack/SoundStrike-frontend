@@ -27,16 +27,34 @@
     "rewriteTsconfig": true
   },
   "files": [
+    "./app/gameObjects/Background.ts",
+    "./app/gameObjects/note.ts",
+    "./app/gameObjects/noteMgr.ts",
+    "./app/lib/core.ts",
+    "./app/lib/core/gameobject.ts",
+    "./app/lib/core/renderer.ts",
+    "./app/lib/core/scene.ts",
+    "./app/lib/core/scenemanager.ts",
+    "./app/lib/engine.ts",
+    "./app/lib/input.ts",
+    "./app/lib/input/keyboard.ts",
+    "./app/lib/input/mouse.ts",
+    "./app/lib/input/touch.ts",
+    "./app/lib/math.ts",
+    "./app/lib/math/easing.ts",
+    "./app/lib/math/mathex.ts",
+    "./app/lib/midi/mic.ts",
+    "./app/lib/midi/midi.ts",
+    "./app/lib/time.ts",
+    "./app/lib/time/clock.ts",
+    "./app/lib/time/timer.ts",
     "./app/main.ts",
-    "./app/midi/mic.ts",
-    "./app/midi/midi.ts",
     "./app/SessionManager.ts",
     "./index.ts",
-<<<<<<< HEAD
     "./typings/threejs/three.d.ts",
     "./typings/socket.io-client/socket.io-client.d.ts"
-=======
-    "./typings/threejs/three.d.ts"
->>>>>>> 281373e464b0fce6329f4aa945ea7198831cc859
+    "./js/app/gameObjects/noteMgr.ts",
+    "./typings/threejs/three.d.ts",
+    "./typings/socket.io-client/socket.io-client.d.ts"
   ]
 }
