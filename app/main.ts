@@ -1,4 +1,4 @@
-import SessionManager from "./SessionManager";
+import SessionManager from "./sessionmanager";
 // Game Engine
 import {Renderer, SceneManager, Scene, KeyCode} from './lib/engine';
 
@@ -32,7 +32,7 @@ function createMainScene() {
 function createScene() {
   var scene = new Scene({ position: { x: 0, y: 0 }, width: 1280, height: 720 }, 1280, 720)
   scene.add(new Background());
-  scene.add(new NoteManager(''));
+  scene.add(new NoteManager(scene, SessionManager.socket));
   return scene;
 }
 

@@ -1,11 +1,9 @@
 import {GameObject, Scene} from '../lib/engine';
-import {Note} from "./note";
+
 
 export class NoteMgr extends GameObject {
   constructor(scene, stream, socket) {
     super();
-
-
 
     this.score = 0;
     socket.on("scoreUpdate", (data) => {

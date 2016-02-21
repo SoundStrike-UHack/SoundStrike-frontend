@@ -1,18 +1,45 @@
-import {GameObject} from '../lib/engine';
+import {GameObject, Scene} from '../lib/engine';
 import midi from '../lib/midi/midi';
+import {Note} from "./note";
+
+import SessionManager from "../sessionmanager";
+
 export class NoteManager extends GameObject {
 
-  public sprite = new Image();
   public keyBuffer = [];
   private notes = [];
-  constructor(typeOfNote: string) {
+  scene:Scene
+  counter:number
+
+  constructor(scene, socket) {
     super();
-    this.sprite.src = './assets/images/eighth.png';
+    this.counter = 0;
+
     window.addEventListener("midiReleased", (e: CustomEvent) => {
       for (var key in e.detail) {
         this.keyBuffer.push({ pitch: key, duration: e.detail[key].duration, start: e.detail[key].startTime })
       }
-      console.log(this.keyBuffer);
+      socket.emit('midiReleased', this.keyBuffer)
+    });
+
+    this.scene = scene;
+    this.notes = [];
+
+    SessionManager.requestStream();
+    var stream = SessionManager.stream;
+
+    for (var n in stream) {
+      var note = new Note(n.pitch, n.duration);
+      this.notes.push(note);
+      console.log(note);
+    }
+
+    this.nextNote();
+
+    window.addEventListener("timeUp", (e) => {
+      var note = this.scene.findObjectOfType("note");
+      this.scene.destroy(note[0]);
+      this.nextNote();
     });
   }
 
@@ -51,5 +78,10 @@ export class NoteManager extends GameObject {
       var yy = -8 + (32 * (43 - letter));
       context.drawImage(this.sprite, 64, yy - 144);
     });
+  }
+
+  nextNote() {
+    this.scene.add(this.notes[this.counter]);
+    this.counter++;
   }
 }
