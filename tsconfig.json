@@ -29,6 +29,7 @@
   "files": [
     "./app/gameObjects/Background.ts",
     "./app/gameObjects/note.ts",
+    "./app/gameObjects/noteMgr.ts",
     "./app/lib/core.ts",
     "./app/lib/core/gameobject.ts",
     "./app/lib/core/renderer.ts",
@@ -50,6 +51,7 @@
     "./app/main.ts",
     "./app/SessionManager.ts",
     "./index.ts",
+    "./js/app/gameObjects/noteMgr.ts",
     "./typings/threejs/three.d.ts",
     "./typings/socket.io-client/socket.io-client.d.ts"
   ]
