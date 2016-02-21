@@ -1,5 +1,5 @@
 {
-  "name": "soundstrike",
+  "name": "SoundStrike",
   "version": "1.0.0",
   "description": "A sight reading app built with WebMidi and WebGL.",
   "main": "index.js",
@@ -34,6 +34,7 @@
     }
   },
   "devDependencies": {
-    "jspm": "^0.16.29"
+    "jspm": "^0.16.29",
+    "lite-server": "^2.1.0"
   }
 }
