@@ -25,7 +25,7 @@ class Midi {
     if (e.data[0] === MidiState.Pressed) {
       for (var keys in this.keyMap) {
         if (this.keyMap[keys].status === MidiState.Released)
-          delete (this.keyMap[keys];
+          delete this.keyMap[keys];
       }
 
       this.keyMap[e.data[1]] = { status: e.data[0], velocity: e.data[2], startTime: e.receivedTime, duration: 0 };
