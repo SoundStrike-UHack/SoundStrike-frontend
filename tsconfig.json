@@ -23,6 +23,7 @@
   },
   "files": [
     "./app/gameobjects/background.ts",
+    "./app/gameobjects/gui.ts",
     "./app/gameobjects/menu.ts",
     "./app/gameobjects/note.ts",
     "./app/gameobjects/notemanager.ts",
@@ -47,7 +48,6 @@
     "./app/lib/time/timer.ts",
     "./app/main.ts",
     "./app/sessionmanager.ts",
-    "./typings/socket.io-client/socket.io-client.d.ts",
     "./typings/threejs/three.d.ts"
   ]
 }
