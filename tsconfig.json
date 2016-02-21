@@ -27,11 +27,13 @@
     "rewriteTsconfig": true
   },
   "files": [
+    "./app/3d/SceneManager.ts",
     "./app/main.ts",
     "./app/midi/mic.ts",
     "./app/midi/midi.ts",
     "./app/SessionManager.ts",
     "./index.ts",
-    "./typings/threejs/three.d.ts"
+    "./typings/threejs/three.d.ts",
+    "./typings/socket.io-client/socket.io-client.d.ts"
   ]
 }

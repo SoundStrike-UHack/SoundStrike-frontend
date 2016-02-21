@@ -1,5 +1,4 @@
-import SessionManager from "./SessionManeger";
+//import SessionManager from "./SessionManeger";
+import * as scnMgr from "./app/3d/SceneManager";
 
-window.onload = function() {
-  
-}
+var sceneMgr = new scnMgr.SceneManager();

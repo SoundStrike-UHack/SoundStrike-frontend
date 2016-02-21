@@ -3,9 +3,7 @@ import io from 'socket.io-client';
 export class SessionManager {
   constructor() {
     this.socket = io();
-    document.getElementById("gl-scene").style.display = "none";
-
-
+    //document.getElementById("gl-scene").style.display = "none";
 
     this.socket.on("connection", function(socket) {
       document.getElementById("gl-scene").style.display = "block";
