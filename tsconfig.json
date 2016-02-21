@@ -30,10 +30,8 @@
     "./app/main.ts",
     "./app/midi/mic.ts",
     "./app/midi/midi.ts",
+    "./app/SessionManager.ts",
     "./index.ts",
-    "./midi.ts",
-    "./SessionManeger.ts",
-    "./socket.ts",
     "./typings/threejs/three.d.ts",
     "./typings/socket.io-client/socket.io-client.d.ts"
   ]
