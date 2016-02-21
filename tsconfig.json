@@ -18,7 +18,8 @@
     "!./node_modules/**/*.ts",
     "!./typings/**/*.ts",
     "./typings/tsd.d.ts",
-    "./typings/threejs/three.d.ts"
+    "./typings/threejs/three.d.ts",
+    "./typings/socket.io-client/socket.io-client.d.ts"
   ],
   "compileOnSave": true,
   "buildOnSave": true,
@@ -28,6 +29,9 @@
   "files": [
     "./index.ts",
     "./midi.ts",
-    "./typings/threejs/three.d.ts"
+    "./SessionManeger.ts",
+    "./socket.ts",
+    "./typings/threejs/three.d.ts",
+    "./typings/socket.io-client/socket.io-client.d.ts"
   ]
 }

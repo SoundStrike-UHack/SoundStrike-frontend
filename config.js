@@ -28,6 +28,7 @@ System.config({
   },
 
   map: {
+    "socket.io-client": "github:socketio/socket.io-client@1.4.5",
     "three": "github:mrdoob/three.js@master",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",

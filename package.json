@@ -29,6 +29,7 @@
       "ts": "github:frankwallis/plugin-typescript@^2.4.5"
     },
     "devDependencies": {
+      "socket.io-client": "github:socketio/socket.io-client@^1.4.5",
       "typescript": "npm:typescript@^1.6.2"
     }
   },
