@@ -22,10 +22,16 @@
     "rewriteTsconfig": true
   },
   "files": [
+
     "./app/gameobjects/background.ts",
     "./app/gameobjects/menu.ts",
     "./app/gameobjects/note.ts",
     "./app/gameobjects/notemanager.ts",
+
+    "./app/gameObjects/Background.ts",
+    "./app/gameObjects/note.ts",
+    "./app/gameObjects/noteMgr.ts",
+
     "./app/lib/core.ts",
     "./app/lib/core/gameobject.ts",
     "./app/lib/core/renderer.ts",
@@ -45,7 +51,14 @@
     "./app/lib/time/clock.ts",
     "./app/lib/time/timer.ts",
     "./app/main.ts",
+
     "./app/sessionmanager.ts",
     "./typings/threejs/three.d.ts"
+
+    "./app/SessionManager.ts",
+    "./index.ts",
+    "./js/app/gameObjects/noteMgr.ts",
+    "./typings/threejs/three.d.ts",
+    "./typings/socket.io-client/socket.io-client.d.ts"
   ]
 }
