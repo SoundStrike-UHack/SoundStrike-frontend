@@ -26,6 +26,9 @@
     "rewriteTsconfig": true
   },
   "files": [
+    "./app/main.ts",
+    "./app/midi/mic.ts",
+    "./app/midi/midi.ts",
     "./index.ts",
     "./midi.ts",
     "./typings/threejs/three.d.ts"
