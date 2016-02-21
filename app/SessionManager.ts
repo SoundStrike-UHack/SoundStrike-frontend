@@ -1,3 +1,5 @@
+
+
 import io from 'socket.io-client';
 
 export
@@ -14,8 +16,9 @@ export
         document.getElementById("bpm").setAttribute("disabled", "true");
       });
 
-      window.addEventListener("midiReleased", function(e) {
+      window.addEventListener("midiReleased", function(e: CustomEvent) {
         socket.emit("midiReleased", e.detail);
+        console.log(e.detail);
       });
 
       this.requestStream = () =>

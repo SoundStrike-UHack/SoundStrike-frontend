@@ -4,11 +4,16 @@ export class Note extends GameObject {
   public type = 'note';
   public sprite = new Image();
 
+<<<<<<< HEAD
   duration:number
   noteType:number
   timeAlive:number
   bpm:number
 
+=======
+  duration:number;
+  timeAlive:number;
+>>>>>>> ea49cfdce6d9cf84de8a39d7288057bb30bdf8a3
   constructor(pitch, duration) {
     super();
     this.duration = duration;
