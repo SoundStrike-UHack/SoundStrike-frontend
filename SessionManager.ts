@@ -5,6 +5,8 @@ export class SessionManager {
     this.socket = io();
     document.getElementById("gl-scene").style.display = "none";
 
+
+
     this.socket.on("connection", function(socket) {
       document.getElementById("gl-scene").style.display = "block";
       socket.emit('initializeSession',
@@ -13,7 +15,11 @@ export class SessionManager {
                       this.session = data.sessionNumber;
                     });
 
-      var requestStream = () =>
+      window.addEventListener("midiReleased", function(e) {
+        socket.emit("midiReleased", e.detail);
+      });
+
+      this.requestStream = () =>
         socket.emit('requestNotesStream',
                       {musicStreamDuration:
                         document.getElementById("duration").innerText},
@@ -43,4 +49,5 @@ export class SessionManager {
   socket: any
   stream: any
   session: string
+  requestStream: any
 }

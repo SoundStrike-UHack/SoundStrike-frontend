@@ -1,6 +1,5 @@
 import SessionManager from "./SessionManeger";
 
-class App {
+window.onload = function() {
+  
 }
-
-var app = new App();
