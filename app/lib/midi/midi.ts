@@ -16,20 +16,19 @@ class Midi {
           this.device.onmidimessage = (e) => this.onMidiMessage(e);
         },
         (err) => console.log(err));
-
   }
   update() {
-
   }
-  onMidiMessage(e) {
+  get midiMap() {
+    return this.keyMap;
+  }
+  private onMidiMessage(e) {
     if (e.data[0] === MidiState.Pressed) {
       for (var keys in this.keyMap) {
         if (this.keyMap[keys].status === MidiState.Released)
           delete this.keyMap[keys];
       }
-
       this.keyMap[e.data[1]] = { status: e.data[0], velocity: e.data[2], startTime: e.receivedTime, duration: 0 };
-      console.log(this.keyMap);
     }
     if (e.data[0] === MidiState.Released) {
       this.keyMap[e.data[1]].status = e.data[0];
@@ -40,4 +39,4 @@ class Midi {
   }
 }
 
-export let midi = new Midi();
+export default new Midi();

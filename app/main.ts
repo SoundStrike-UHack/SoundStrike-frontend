@@ -31,6 +31,7 @@ function createMainScene() {
 function createScene() {
   var scene = new Scene({ position: { x: 0, y: 0 }, width: 1280, height: 720 }, 1280, 720)
   scene.add(new Background());
+  scene.add(new NoteManager(''));
   return scene;
 }
 

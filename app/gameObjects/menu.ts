@@ -20,7 +20,6 @@ export class Menu extends GameObject {
     if (!this.startgame && input.mouseClick()) {
       this.startgame = true;
       this.elapsedTime = 0;
-      console.log(this.elapsedTime);
     }
 
     // Fade in and Fade out

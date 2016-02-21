@@ -15,8 +15,9 @@ export class SessionManager {
                       this.session = data.sessionNumber;
                     });
 
-      window.addEventListener("midiReleased", function(e) {
+      window.addEventListener("midiReleased", function(e: CustomEvent) {
         socket.emit("midiReleased", e.detail);
+        console.log(e.detail);
       });
 
       this.requestStream = () =>
