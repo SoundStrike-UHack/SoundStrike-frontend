@@ -1,3 +1,4 @@
+import {SessionManager} from "./app/SessionManager";
 // Game Engine
 import {Renderer, SceneManager, Scene, KeyCode} from './app/lib/engine';
 
@@ -30,3 +31,5 @@ function animate() {
 start();
 animate();
 console.log("Started");
+
+var sessionMgr = new SessionManager();

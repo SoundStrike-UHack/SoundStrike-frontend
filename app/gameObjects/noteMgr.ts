@@ -14,6 +14,11 @@ export class NoteMgr extends GameObject {
 
     this.scene = scene;
     this.stream = stream;
+
+    for(var n in stream) {
+
+    }
+
     this.counter = 0;
 
     this.nextNote();

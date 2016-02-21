@@ -12,7 +12,7 @@ export
       {bpm: document.getElementById("bpm").innerText},
       function(data) {
         this.session = data.sessionNumber;
-        document.getElementById("bpm").setAttribute("disabled", true);
+        document.getElementById("bpm").setAttribute("disabled", "true");
       });
 
       window.addEventListener("midiReleased", function(e) {
@@ -49,5 +49,5 @@ export
     socket: any
     stream: any
     session: string
-    requestStream: any
+    public requestStream: any
   }

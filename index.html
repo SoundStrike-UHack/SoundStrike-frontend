@@ -35,9 +35,14 @@
     <h1>SoundStrike</h1>
     <h4>A Sight Reading Trainer</h4>
   </div>
+  <div>
+    <p id='score'>0</p>
+    <label>BPM</label>
+    <input type='text-field' id='bpm'>
+    <button onClick='sessionMgr.requestStream()'>GO!!</button>
+  </div>
   <div id="gl-scene" style="width: 500px; height: 500px;"></div>
-  <button onClick='SessionManager.requestStream()'>GO!!</button>
-  <p id='score'>0</p>
+
   <!--Load Scripts -->
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
