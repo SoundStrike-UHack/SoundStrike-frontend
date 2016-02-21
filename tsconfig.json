@@ -13,13 +13,8 @@
   },
   "filesGlob": [
     "./**/*.ts",
-    "./test/**/*.ts",
     "!./jspm_packages/**/*.ts",
-    "!./node_modules/**/*.ts",
-    "!./typings/**/*.ts",
-    "./typings/tsd.d.ts",
-    "./typings/threejs/three.d.ts",
-    "./typings/socket.io-client/socket.io-client.d.ts"
+    "!./node_modules/**/*.ts"
   ],
   "compileOnSave": true,
   "buildOnSave": true,
@@ -27,8 +22,10 @@
     "rewriteTsconfig": true
   },
   "files": [
-    "./app/gameObjects/Background.ts",
-    "./app/gameObjects/note.ts",
+    "./app/gameobjects/background.ts",
+    "./app/gameobjects/menu.ts",
+    "./app/gameobjects/note.ts",
+    "./app/gameobjects/notemanager.ts",
     "./app/lib/core.ts",
     "./app/lib/core/gameobject.ts",
     "./app/lib/core/renderer.ts",
@@ -48,9 +45,7 @@
     "./app/lib/time/clock.ts",
     "./app/lib/time/timer.ts",
     "./app/main.ts",
-    "./app/SessionManager.ts",
-    "./index.ts",
-    "./typings/threejs/three.d.ts",
-    "./typings/socket.io-client/socket.io-client.d.ts"
+    "./app/sessionmanager.ts",
+    "./typings/threejs/three.d.ts"
   ]
 }

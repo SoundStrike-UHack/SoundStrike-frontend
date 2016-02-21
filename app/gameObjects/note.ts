@@ -3,7 +3,7 @@ import {GameObject} from '../lib/engine';
 export class Note extends GameObject {
   public type = 'Halthpack';
   public sprite = new Image();
-  constructor(, typeOfNote:string) {
+  constructor(typeOfNote:string) {
     super();
 
     this.sprite.src = './assets/notes/'+typeOfNote+'.png';

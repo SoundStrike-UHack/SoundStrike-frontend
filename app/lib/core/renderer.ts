@@ -39,19 +39,21 @@ export class Renderer {
 
   //Refreshes the screen with everything in the scene.
   render(scene: Scene) {
-    this.context.save();
-    //Viewport
-    this.context.translate(-scene.viewport.position.x, -scene.viewport.position.y);
-    this.context.clearRect(scene.viewport.position.x, scene.viewport.position.y, scene.viewport.width, scene.viewport.height);
+    if (scene) {
+      this.context.save();
+      //Viewport
+      this.context.translate(-scene.viewport.position.x, -scene.viewport.position.y);
+      this.context.clearRect(scene.viewport.position.x, scene.viewport.position.y, scene.viewport.width, scene.viewport.height);
 
-    //Render Scene
-    scene.array.map((o) => {
-      if ('render' in o)
-        if (scene)
-          o.render(this.context);
-    });
+      //Render Scene
+      scene.array.map((o) => {
+        if ('render' in o)
+          if (scene)
+            o.render(this.context);
+      });
 
-    this.context.restore();
-    this.input.update();
+      this.context.restore();
+      this.input.update();
+    }
   }
 }

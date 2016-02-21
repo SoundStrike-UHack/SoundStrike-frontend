@@ -40,4 +40,4 @@ class Midi {
   }
 }
 
-export default new Midi();
+export let midi = new Midi();
