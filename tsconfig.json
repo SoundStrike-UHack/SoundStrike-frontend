@@ -32,7 +32,11 @@
     "./app/midi/midi.ts",
     "./app/SessionManager.ts",
     "./index.ts",
+<<<<<<< HEAD
     "./typings/threejs/three.d.ts",
     "./typings/socket.io-client/socket.io-client.d.ts"
+=======
+    "./typings/threejs/three.d.ts"
+>>>>>>> 281373e464b0fce6329f4aa945ea7198831cc859
   ]
 }

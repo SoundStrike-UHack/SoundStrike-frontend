@@ -1,5 +1,1 @@
-import SessionManager from "./SessionManeger";
-
-window.onload = function() {
-  
-}
+import * as App from "./app/main";

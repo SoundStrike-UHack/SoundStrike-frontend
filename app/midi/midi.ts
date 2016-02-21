@@ -24,7 +24,7 @@ class Midi {
   onMidiMessage(e) {
     if (e.data[0] === MidiState.Pressed) {
       for (var keys in this.keyMap) {
-        if (this.keyMap[keys].status === MidiState.Released
+        if (this.keyMap[keys].status === MidiState.Released)
           delete (this.keyMap[keys];
       }
 
@@ -35,7 +35,6 @@ class Midi {
       this.keyMap[e.data[1]].status = e.data[0];
       this.keyMap[e.data[1]].duration = e.receivedTime - this.keyMap[e.data[1]].startTime;
       window.dispatchEvent(new CustomEvent('midiReleased', { 'detail': this.keyMap }));
-      //delete this.keyMap[e.data[1]];
     }
 
   }
